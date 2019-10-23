@@ -2,6 +2,8 @@
 
 ### Minikube 설치 환경
 
+![minikub](./minikube.png)
+
 노트북 PC에 Virtualbox를 설치 후 외부 인터넷 연결 및 내부 Host/Guest OS 간 통신을 위해서 Host Only Adapter 및 Nat Network 구성
 Guest OS 로 Ubuntu 설치
 Minikube를 추가 가상화 환경없이 on-premise 노드 환경으로 설치하기 위해 Docker 및 kubectl 를 설치
@@ -16,6 +18,7 @@ Minikube는 다음과 같은 쿠버네티스 환경을 제공
   - Ingress
 
 Minikube 로 설치된 Kubenetes 환경에서 샘플 Pod를 배포하여 실행을 확인
+
 
 
 ### Ubuntu apt 패키지 Index 업데이트
