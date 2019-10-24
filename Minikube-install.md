@@ -466,10 +466,7 @@ sudo vi /etc/hosts
 
 ```java
 curl exam-hello.ingress
-  
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" class="en" ng-app="SpringMusic">
-<head>
+Greetings from Spring Boot!
 ...
 ```
 
