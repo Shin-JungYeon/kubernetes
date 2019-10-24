@@ -19,7 +19,8 @@ Minikube는 다음과 같은 쿠버네티스 환경을 제공
 
 Minikube 로 설치된 Kubenetes 환경에서 샘플 Pod를 배포하여 실행을 확인
 
-
+솔로몬 하익스 Docker 최초 소개 영상
+https://www.youtube.com/watch?v=wW9CAH9nSLs
 
 ### Ubuntu apt 패키지 Index 업데이트
 
