@@ -287,10 +287,12 @@ OpenJDK 64-Bit Server VM (build 25.212-b03, mixed mode)
 
 ### Sample app Compile
 
-```java
-git clone https://github.com/cloudfoundry-samples/spring-music.git
+https://github.com/spring-guides/gs-spring-boot
 
-cd spring-music/
+```java
+git clone https://github.com/spring-guides/gs-spring-boot
+
+cd gs-spring-boot/initial
 
 ./gradlew clean assemble
 ```
@@ -300,18 +302,18 @@ cd spring-music/
 ### Dockerfile
 
 ```java
-cd ..
+cd ../../
 
-cp ./spring-music/build/libs/spring-music-1.0.jar .
+cp ./gs-spring-boot/initial/build/libs/gs-spring-boot-0.1.0.jar.
 
 vi Dockerfile
   
 FROM openjdk:8-jdk-alpine
 RUN mkdir /apps
-COPY ./spring-music-1.0.jar /app/
+COPY gs-spring-boot-0.1.0.jar /app/hello.jar
 WORKDIR /app
 EXPOSE 8080
-CMD ["java","-jar","/app/spring-music-1.0.jar"]  
+CMD ["java","-jar","/app/hello.jar"]  
 ```
 
 
