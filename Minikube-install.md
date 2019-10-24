@@ -304,7 +304,7 @@ cd gs-spring-boot/initial
 ```java
 cd ../../
 
-cp ./gs-spring-boot/initial/build/libs/gs-spring-boot-0.1.0.jar.
+cp ./gs-spring-boot/initial/build/libs/gs-spring-boot-0.1.0.jar .
 
 vi Dockerfile
   
