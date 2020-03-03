@@ -117,7 +117,7 @@ exclude=kube*
 
 ```
 
-yum install -y kubectl
+sudo yum install -y kubectl
 
 ```
 
