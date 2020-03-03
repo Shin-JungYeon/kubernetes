@@ -29,7 +29,7 @@ $ ssh centos@101.55.126.242
 
 pw : crossent1234
 
-$ ssh -i ~/.ssh/kepri-msa.pem ubuntu@10.0.x.x
+$ ssh -i ~/.ssh/kepri-msa.pem ubuntu@10.0.0.x
 ```
 
 ### Ubuntu apt 패키지 Index 업데이트
