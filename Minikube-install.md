@@ -22,6 +22,16 @@ Minikube 로 설치된 Kubenetes 환경에서 샘플 Pod를 배포하여 실행�
 솔로몬 하익스 Docker 최초 소개 영상
 https://www.youtube.com/watch?v=wW9CAH9nSLs
 
+
+### Ubuntu 테스트 환경 접속
+```
+$ ssh centos@101.55.126.242
+
+pw : crossent1234
+
+$ ssh -i ~/.ssh/kepri-msa.pem ubuntu@10.0.x.x
+```
+
 ### Ubuntu apt 패키지 Index 업데이트
 
 ```
