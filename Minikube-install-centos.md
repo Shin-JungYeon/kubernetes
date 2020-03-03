@@ -138,6 +138,7 @@ The connection to the server localhost:8080 was refused - did you specify the ri
 
 ```java
 curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 
+
 ```
 
 
