@@ -84,7 +84,7 @@ apt-cache madison docker-ce
 ### 설치를 원하는 버전을 지정하여 설치(ex : 18.09.0 버전)
 
 ```java
-sudo apt-get -y install docker-ce=5:18.09.9~3-0~ubuntu-xenial docker-ce-cli=5:18.09.9~3-0~ubuntu-xenial containerd.io
+sudo apt-get -y install docker-ce=5:18.09.9~3-0~ubuntu-bionic docker-ce-cli=5:18.09.9~3-0~ubuntu-bionic containerd.io
 ```
 
 
