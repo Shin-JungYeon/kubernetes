@@ -95,26 +95,30 @@ For more examples and ideas, visit:
 
 
 
-### Curl 명령으로 kubectl 실행파일 다운로드
+### kubectl reposytory 설정
 
-```java
-curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+```
+sudo vi /etc/yum.repos.d/kubernetes.repo
+
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+exclude=kube*
+
 ```
 
 
 
-### 파일 실행 권한 부여
+### kubectl 설치
 
-```java
-chmod +x kubectl 
 ```
 
+yum install -y kubectl
 
-
-### 로컬 PATH 로 실행파일 이동
-
-```java
-sudo mv ./kubectl /usr/local/bin/kubectl 
 ```
 
 
