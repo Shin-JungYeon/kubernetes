@@ -304,13 +304,13 @@ cd gs-spring-boot/initial
 ```java
 cd ../../
 
-cp ./gs-spring-boot/initial/build/libs/gs-spring-boot-0.1.0.jar .
+cp ./gs-spring-boot/initial/build/libs/spring-boot-0.0.1-SNAPSHOT.jar .
 
 vi Dockerfile
   
 FROM openjdk:8-jdk-alpine
 RUN mkdir /apps
-COPY gs-spring-boot-0.1.0.jar /app/hello.jar
+COPY spring-boot-0.0.1-SNAPSHOT.jar /app/hello.jar
 WORKDIR /app
 EXPOSE 8080
 CMD ["java","-jar","/app/hello.jar"]  
@@ -330,9 +330,21 @@ sudo docker image build -t exam/hello:latest .
 
 ```java
 docker images |grep hello
+
 ```
 
 
+### Docker run 확인
+
+```java
+
+docker run -d -p 8080:8080 exam/hello
+
+curl localhost:8080
+
+
+
+```
 
 ### Pod 배포를 위한 Deployment.yml 작성 및 적용
 
@@ -455,8 +467,13 @@ sudo kubectl get ingress -n example
 ### Ingress 에 설정된 host URL 로 거래 요청을 위하여 DNS 설정대신 /etc/hosts에 Minikube IP 및 Ingress 설정 Host 명 등록
 
 ```java
+sudo kubectl cluster-info
+Kubernetes master is running at https://10.0.0.3:8443
+KubeDNS is running at https://10.0.0.3:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
+
+
 sudo vi /etc/hosts
-10.0.2.180   exam-hello.ingress
+10.0.0.3   exam-hello.ingress
 
 ```
 
